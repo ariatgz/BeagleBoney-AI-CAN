@@ -3,9 +3,8 @@
 
 #include "ti/k3-pinctrl.h"
 
-/*
+/* Written by Arya Taghizadeh
  * BeagleY-AI MCAN0 Mapping:
- *
  * Mux Mode 0 for both.
  */
 
@@ -19,6 +18,7 @@
     pinctrl-cells = <2>;
     mcan0_pins_default: mcan0-pins-default {
         pinctrl-single,pins = <
+            /* J722s = AM67a*/
             /* B1: RX requires INPUT */
             J722S_IOPAD(0x1DC, PIN_INPUT, 0) 
             
