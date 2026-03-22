@@ -1,0 +1,37 @@
+/dts-v1/;
+/plugin/;
+
+#include "ti/k3-pinctrl.h"
+
+/*
+ * BeagleY-AI MCAN0 Mapping:
+ *
+ * Mux Mode 0 for both.
+ */
+
+&{/chosen} {
+    overlays {
+        can1.kernel = __TIMESTAMP__;
+    };
+};
+
+&main_pmx0 {
+    pinctrl-cells = <2>;
+    mcan0_pins_default: mcan0-pins-default {
+        pinctrl-single,pins = <
+            /* B1: RX requires INPUT */
+            J722S_IOPAD(0x1DC, PIN_INPUT, 0) 
+            
+            /* C1: TX is an OUTPUT */
+            J722S_IOPAD(0x1D8, PIN_OUTPUT, 0)
+        >;
+    };
+};
+
+&main_mcan0 {
+    status = "okay";
+    pinctrl-names = "default";
+    pinctrl-0 = <&mcan0_pins_default>;
+};
+
+
