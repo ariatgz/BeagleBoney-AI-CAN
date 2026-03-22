@@ -1,4 +1,4 @@
-# BeagleBone AI CAN1 (CSI0) Device Tree Overlay
+# BeagleBoneY AI CAN1 (CSI0) Device Tree Overlay
 
 Enable the **CAN1 (Controller Area Network)** interface on the BeagleBone AI using **Device Tree Source (DTS)** and **Device Tree Overlay (DTBO)** files.
 
