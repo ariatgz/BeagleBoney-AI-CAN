@@ -1,6 +1,6 @@
 # BeagleBoneY AI CAN1 (CSI0) Device Tree Overlay
 
-Enable the **CAN1 (Controller Area Network)** interface on the BeagleBone AI using **Device Tree Source (DTS)** and **Device Tree Overlay (DTBO)** files.
+Enable the **CAN1 (Controller Area Network)** interface on the BeagleBoneY AI using **Device Tree Source (DTS)** and **Device Tree Overlay (DTBO)** files.
 
 This project configures CAN1 to be routed through the **CSI0 port**, allowing connection to external CAN hardware via a ribbon cable and compatible CAN transceiver.
 
